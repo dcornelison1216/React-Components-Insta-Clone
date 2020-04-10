@@ -10,14 +10,13 @@ import "./App.css";
 import PostsPage from "./components/PostsContainer/PostsPage"
 import SearchBar from "./components/SearchBar/SearchBarContainer"
 
-
 const App = () => {
 
   return (
     <div className="App">
       {/* Add imported components here to render them */}
-      <PostsPage />
       <SearchBar />
+      <PostsPage />
     </div>
   );
 };
