@@ -6,6 +6,7 @@ import React, { useState } from "react";
 const LikeSection = props => {
   // console.log("likesprops", props)
   const [likes, setLikes] = useState(props.post.likes)
+  const likesCap = props.post.likes + 1
   return (
     <div>
     <div
@@ -13,7 +14,7 @@ const LikeSection = props => {
       key="likes-icons-container"
     >
       <div className="like-section-wrapper">
-        <i className="far fa-heart" onClick={() => setLikes(likes + 1)} />
+        <i className="far fa-heart" onClick={() => {if (likes < likesCap) {setLikes(likes + 1)}}} />
       </div>
       <div className="like-section-wrapper">
         <i className="far fa-comment" />
