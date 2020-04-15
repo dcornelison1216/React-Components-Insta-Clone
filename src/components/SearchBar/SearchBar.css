@@ -16,6 +16,8 @@
 }
 .image-wrapper {
   height: 50px;
+  display: flex;
+  flex-direction: row;
 }
 
 .logo-image {
@@ -28,4 +30,23 @@
 
 .social {
   width: 50px;
+}
+
+@font-face {
+  font-family: 'Watermelon';
+  src: url("Watermelon.ttf");
+}
+
+.insta-logo {
+  font-family: 'Watermelon';
+  text-align: right;
+  padding-left: .5rem;
+  border-left: 1px solid black;
+  padding-top: .5rem;
+}
+
+.fa-instagram {
+  padding-top: 1.6rem;
+  padding-right: .5rem;
+
 }
